@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF14EBF81F85DC9400000178 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14EBF41F85DC9400000178 /* Course+CoreDataClass.swift */; };
+		CF14EBF91F85DC9400000178 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14EBF51F85DC9400000178 /* Course+CoreDataProperties.swift */; };
+		CF14EBFA1F85DC9400000178 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14EBF61F85DC9400000178 /* Student+CoreDataClass.swift */; };
+		CF14EBFB1F85DC9400000178 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14EBF71F85DC9400000178 /* Student+CoreDataProperties.swift */; };
 		CF69057C1F834856006DFB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69057B1F834856006DFB83 /* AppDelegate.swift */; };
 		CF69057E1F834856006DFB83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69057D1F834856006DFB83 /* ViewController.swift */; };
 		CF6905811F834856006DFB83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF69057F1F834856006DFB83 /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		CF6905891F834856006DFB83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6905871F834856006DFB83 /* LaunchScreen.storyboard */; };
 		CF6905941F834856006DFB83 /* DatabasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6905931F834856006DFB83 /* DatabasesTests.swift */; };
 		CF69059F1F834857006DFB83 /* DatabasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69059E1F834857006DFB83 /* DatabasesUITests.swift */; };
+		CF6905AD1F834916006DFB83 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6905AC1F834916006DFB83 /* DatabaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF14EBF41F85DC9400000178 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CF14EBF51F85DC9400000178 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF14EBF61F85DC9400000178 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CF14EBF71F85DC9400000178 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CF6905781F834856006DFB83 /* Databases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Databases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69057B1F834856006DFB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF69057D1F834856006DFB83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		CF69059A1F834857006DFB83 /* DatabasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF69059E1F834857006DFB83 /* DatabasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasesUITests.swift; sourceTree = "<group>"; };
 		CF6905A01F834857006DFB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6905AC1F834916006DFB83 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,9 @@
 		CF69057A1F834856006DFB83 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
+				CF6905B61F834BE6006DFB83 /* Models */,
 				CF69057B1F834856006DFB83 /* AppDelegate.swift */,
+				CF6905AC1F834916006DFB83 /* DatabaseController.swift */,
 				CF69057D1F834856006DFB83 /* ViewController.swift */,
 				CF69057F1F834856006DFB83 /* Main.storyboard */,
 				CF6905851F834856006DFB83 /* Assets.xcassets */,
@@ -126,6 +138,17 @@
 				CF6905A01F834857006DFB83 /* Info.plist */,
 			);
 			path = DatabasesUITests;
+			sourceTree = "<group>";
+		};
+		CF6905B61F834BE6006DFB83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF14EBF41F85DC9400000178 /* Course+CoreDataClass.swift */,
+				CF14EBF51F85DC9400000178 /* Course+CoreDataProperties.swift */,
+				CF14EBF61F85DC9400000178 /* Student+CoreDataClass.swift */,
+				CF14EBF71F85DC9400000178 /* Student+CoreDataProperties.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF14EBF81F85DC9400000178 /* Course+CoreDataClass.swift in Sources */,
+				CF6905AD1F834916006DFB83 /* DatabaseController.swift in Sources */,
+				CF14EBFB1F85DC9400000178 /* Student+CoreDataProperties.swift in Sources */,
 				CF69057E1F834856006DFB83 /* ViewController.swift in Sources */,
+				CF14EBFA1F85DC9400000178 /* Student+CoreDataClass.swift in Sources */,
 				CF6905841F834856006DFB83 /* Databases.xcdatamodeld in Sources */,
+				CF14EBF91F85DC9400000178 /* Course+CoreDataProperties.swift in Sources */,
 				CF69057C1F834856006DFB83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +539,7 @@
 				CF6905A51F834857006DFB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF6905A61F834857006DFB83 /* Build configuration list for PBXNativeTarget "DatabasesTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +548,7 @@
 				CF6905A81F834857006DFB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF6905A91F834857006DFB83 /* Build configuration list for PBXNativeTarget "DatabasesUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +557,7 @@
 				CF6905AB1F834857006DFB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
